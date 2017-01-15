@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// program doesn't work yet
+// translation from my working Python sudoku_checker
+
 namespace sudoku_solver_final
 {
     class Program
