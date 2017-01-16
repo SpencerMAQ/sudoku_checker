@@ -127,7 +127,7 @@ truthValueColumns = False
 for row in range(9):            # check by iterating through rows
     for column in range(9):
         for item in range(9):
-            if column == item:  # skip checking itself
+            if row == item:  # if column == item:  # skip checking itself
                 pass
 
             elif sudoku_list[column][row] != sudoku_list[column][item]:
