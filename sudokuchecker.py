@@ -10,6 +10,7 @@ else:
 
 # why is it that I can't instantiate multidimensional arrays in Python?
 # I've seen some code of initializations using for loops, but I'd like it this nonetheless, for visualization
+# changes made from blah-blah BRANCH
 sudoku_list = [
                 [1,1,1,1,1,1,1,1,1],
                 [2,2,2,2,2,2,2,2,2],
