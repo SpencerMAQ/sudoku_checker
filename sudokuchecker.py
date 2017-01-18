@@ -8,6 +8,7 @@ if len(sudoku_input) != 81:
 else:
     lenCheck = True
 
+# why is it that I can't instantiate multidimensional arrays in Python?
 sudoku_list = [
                 [1,1,1,1,1,1,1,1,1],
                 [2,2,2,2,2,2,2,2,2],
@@ -20,7 +21,7 @@ sudoku_list = [
                 [9,9,9,9,9,9,9,9,9]
               ]
 
-sudoku3DList = [   # not represntative of actual formation
+sudoku3DList = [   # not representative of actual formation
                 [
                     [1,1,1],
                     [1,1,1],
@@ -94,8 +95,8 @@ def checkPerBox():  # check that no dupe per 3x3 box
                         pass
 
                     elif sudoku3DList[box][row][column] == sudoku3DList[box][nextRow][item]:
-                        print("iter3d: {4}| sudoku_list[{0}][{1}][{2}] == sudoku_list[{0}][{5}][{3}]".format
-                                                                            (box, row, column,item,iter3D,nextRow))
+                        #print("iter3d: {4}| sudoku_list[{0}][{1}][{2}] == sudoku_list[{0}][{5}][{3}]".format
+                                                                            #(box, row, column,item,iter3D,nextRow))
                         return False
 
                     iter3D += 1
@@ -127,7 +128,7 @@ truthValueColumns = False
 for row in range(9):            # check by iterating through rows
     for column in range(9):
         for item in range(9):
-            if row == item:  # if column == item:  # skip checking itself
+            if row == item:     # if column == item:  # skip checking itself
                 pass
 
             elif sudoku_list[column][row] != sudoku_list[column][item]:
